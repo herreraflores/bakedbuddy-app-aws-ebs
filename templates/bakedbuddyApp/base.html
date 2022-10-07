@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BakedBuddy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> -->
+
+    <meta name="description" content="Find deals for dispensaries in Tacoma." />
+    <meta name="author" content="BakedBuddyLLC" />
+
+    <!-- Bulma Style Sheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-social@2/css/all.min.css"
+    />
+
+    <!-- FontAwesome Icon Library -->
+    <script src="https://kit.fontawesome.com/abb75bf73d.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <style>
+      <!--  CSS Navbar Dropdown -->
+      @media screen and (max-width: 1024px) {
+         .navbar-dropdown .is-active {
+           display: block;
+         }
+         .navbar-dropdown:not(.is-active) {
+           display: none;
+         }
+        }
+
+      <!-- Tabs in Daily Deals -->
+      #tabs-with-content .tabs:not(:last-child) {
+        margin-bottom: 0;
+      }
+  
+      #tabs-with-content .tab-content {
+          padding: 1rem;
+          display: none;
+        }
+    
+      #tabs-with-content .tab-content.is-active {
+          display: block;
+        }
+  
+      .theme-color {
+        color: #4895ef;
+      } 
+      </style>
+
+  </head>
+  <body>
+    <div class="is-fluid">
+        
+        <!-- Navbar -->
+        <div class="container is-fluid mt-2">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                
+                <a class="navbar-item has-text-weight-semibold theme-color" href="/"
+                >BakedBuddy</a
+                >
+
+                <a
+                role="button"
+                class="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+                >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                  <span class="icon mr-1 theme-color">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  Home </a>
+                <a class="navbar-item" href="/daily-deals"> 
+                  <span class="icon mr-1 theme-color">
+                    <i class="fa-solid fa-cannabis"></i>
+                  </span>
+                  Daily Deals </a>
+                {% comment %} <a class="navbar-item" href=""> 
+                  <span class="icon mr-1" style="color: #4895ef">
+                    <i class="fa-solid fa-cannabis"></i>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </span>
+                  Dispensaries </a> {% endcomment %}
+                {% comment %} <a class="navbar-item" href="/product-search">
+                  <span class="icon mr-1" style="color: #4895ef">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                  Product Search </a> {% endcomment %}
+
+                {% comment %} <hr class="solid my-1"> {% endcomment %}
+
+                <hr class="solid my-1">
+
+                {% if user.is_authenticated %}
+                <a class="navbar-item navbar-end" href="/">
+                  <span class="icon mr-1" style="color: #4895ef">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  {{ user.get_username }} </a>
+                <a class="navbar-item navbar-end" href="/logout">
+                  <span class="icon mr-1" style="color: #4895ef">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  </span>
+                  Logout </a>
+                
+                {% else %}
+                <a class="navbar-item navbar-end" href="/login">
+                  <span class="icon mr-1" style="color: #4895ef">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  </span>
+                  Login </a>
+                <a class="navbar-item navbar-end" href="/register">
+                  <span class="icon mr-1" style="color: #4895ef">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  Register </a>
+                {% endif %}
+                
+
+                </div>
+            </div>
+
+            </nav>
+        </div>
+
+        
+
+        <!-- Section -->
+        {% block content %}{% endblock %}
+
+
+       
+
+
+        <!-- JS Navbar Functionanility -->
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+                const hamburgerButton = document.querySelector(".navbar-burger");
+                const navMenu = document.querySelector(".navbar-menu");
+        
+                hamburgerButton.addEventListener("click", () => {
+                  hamburgerButton.classList.toggle("is-active");
+                  navMenu.classList.toggle("is-active");
+                });
+        
+                const allDropdowns = document.querySelectorAll(
+                  ".navbar-item.has-dropdown"
+                );
+        
+                allDropdowns.forEach((dropdown) => {
+                  dropdown.addEventListener("click", () => {
+                    const elem = dropdown.querySelector(".navbar-dropdown");
+                    elem.classList.toggle("is-active");
+                  });
+                });
+            });
+        </script>
+
+        <!-- JS Tab Functionanility in Daily Deals -->
+        <script>
+          let tabsWithContent = (function () {
+        
+            let tabs = document.querySelectorAll('.tabs li');
+            let tabsContent = document.querySelectorAll('.tab-content');
+        
+            let deactvateAllTabs = function () {
+              tabs.forEach(function (tab) {
+                tab.classList.remove('is-active');
+              });
+            };
+        
+            let hideTabsContent = function () {
+              tabsContent.forEach(function (tabContent) {
+                tabContent.classList.remove('is-active');
+              });
+            };
+        
+            let activateTabsContent = function (tab) {
+              tabsContent[getIndex(tab)].classList.add('is-active');
+            };
+        
+            let getIndex = function (el) {
+              return [...el.parentElement.children].indexOf(el);
+            };
+        
+            tabs.forEach(function (tab) {
+              tab.addEventListener('click', function () {
+                deactvateAllTabs();
+                hideTabsContent();
+                tab.classList.add('is-active');
+                activateTabsContent(tab);
+              });
+            })
+        
+            tabs[0].click();
+          })();
+        </script>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,182 @@
+{
+    "flower": [
+        {
+            "image": "https://www.marymart.com/wp-content/uploads/2019/03/mary_mart_tacoma_store_front_sign-copy.jpg",
+            "name": "Mary Mart",
+            "deal": "T.G.I.F Friday - 15% off all bulk flower (7g-28g)!"
+        },
+        {
+            "image": "https://commencementbaycannabis.com/wp-content/uploads/2020/10/commencement-bay-cannabis-logo-trimmed-green.png",
+            "name": "Commencement Bay Cannabis - Green",
+            "deal": "Mega Monday- 15% Off 7g Of Flower 30% Off 28g Of Flower"
+        },
+        {
+            "image": "https://commencementbaycannabis.com/wp-content/uploads/2020/10/commencement-bay-cannabis-logo-trimmed-green.png",
+            "name": "Commencement Bay Cannabis - Green",
+            "deal": "Fire Friday - 20% Off Top Shelf Flower"
+        },
+        {
+            "image": "https://pbs.twimg.com/profile_images/1027225946623959040/Tzo4pgVI_400x400.jpg",
+            "name": "Bloom Cannabis - Tacoma",
+            "deal": "30% OFF All Flower"
+        },
+        {
+            "image": "https://pbs.twimg.com/profile_images/1027225946623959040/Tzo4pgVI_400x400.jpg",
+            "name": "Bloom Cannabis - Tacoma",
+            "deal": "30% OFF All Flower 25% OFF the Rest of the Store"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Tuesday - 25% off all flower"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Friday - 25% off all flower"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Sunday - 25% off all flower and prerolls"
+        }
+    ],
+    "edibles": [
+        {
+            "image": "https://www.marymart.com/wp-content/uploads/2019/03/mary_mart_tacoma_store_front_sign-copy.jpg",
+            "name": "Mary Mart",
+            "deal": "Twisted Happy Hour - 11am-2pm 15% off all edibles and topicals!"
+        },
+        {
+            "image": "https://commencementbaycannabis.com/wp-content/uploads/2020/10/commencement-bay-cannabis-logo-trimmed-green.png",
+            "name": "Commencement Bay Cannabis - Green",
+            "deal": "Satisfaction Saturday - 30% Off Edibles & Select Vendor"
+        },
+        {
+            "image": "https://www.colorhexa.com/4895ef.png",
+            "name": "Clear Choice - Tacoma",
+            "deal": "Save 20% Select Prerolls & Edibles"
+        }
+    ],
+    "prerolls": [
+        {
+            "image": "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fdispensary%2Flogos%2FvgAyEa2ORfOX1opbcbAW_IMG_8381.JPG?ixlib=js-2.3.2&dpr=1&w=1100&h=750&fit=fillmax&s=b0c7ab6c3408d781981ac362d8ade25f",
+            "name": "Commencement Bay Cannabis - Red",
+            "deal": "Super Joint Sunday 15% Off Pre-Rolls"
+        },
+        {
+            "image": "https://www.colorhexa.com/4895ef.png",
+            "name": "Clear Choice - Tacoma",
+            "deal": "Save 20% Select Prerolls & Edibles"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Sunday - 25% off all flower and prerolls"
+        }
+    ],
+    "vaporizers": [
+
+    ],
+    "beverages": [
+
+    ],
+    "concentrates": [
+        {
+            "image": "https://www.marymart.com/wp-content/uploads/2019/03/mary_mart_tacoma_store_front_sign-copy.jpg",
+            "name": "Mary Mart",
+            "deal": "Saturday Shatterday - 10% off all concentrates!"
+        },
+        {
+            "image": "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fdispensary%2Flogos%2FvgAyEa2ORfOX1opbcbAW_IMG_8381.JPG?ixlib=js-2.3.2&dpr=1&w=1100&h=750&fit=fillmax&s=b0c7ab6c3408d781981ac362d8ade25f",
+            "name": "Commencement Bay Cannabis - Red",
+            "deal": "Weight Wednesday 15% Off 7g+ 30% Off 28g 30% off 7g Of Concentrate"
+        },
+        {
+            "image": "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fdispensary%2Flogos%2FvgAyEa2ORfOX1opbcbAW_IMG_8381.JPG?ixlib=js-2.3.2&dpr=1&w=1100&h=750&fit=fillmax&s=b0c7ab6c3408d781981ac362d8ade25f",
+            "name": "Commencement Bay Cannabis - Red",
+            "deal": "Shatterday 15% Off Concentrate 30% Off 7g Concentrate"
+        },
+        {
+            "image": "https://commencementbaycannabis.com/wp-content/uploads/2020/10/commencement-bay-cannabis-logo-trimmed-green.png",
+            "name": "Commencement Bay Cannabis - Green",
+            "deal": "Waxy Wednesday - 20% Off Cartridges & Concentrates"
+        },
+        {
+            "image": "https://pbs.twimg.com/profile_images/1027225946623959040/Tzo4pgVI_400x400.jpg",
+            "name": "Bloom Cannabis - Tacoma",
+            "deal": "30% OFF All Concentrates"
+        },
+        {
+            "image": "https://pbs.twimg.com/profile_images/1027225946623959040/Tzo4pgVI_400x400.jpg",
+            "name": "Bloom Cannabis - Tacoma",
+            "deal": "30% OFF All Pre-Rolls 30 OFF All Concentrates"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Wednesday - 30% off cards and concentrates"
+        }
+    ],
+    "storewide": [
+        {
+            "image": "https://www.marymart.com/wp-content/uploads/2019/03/mary_mart_tacoma_store_front_sign-copy.jpg",
+            "name": "Mary Mart",
+            "deal": "Monday Happy Hour - 11am-2pm 15% off the entire store!"
+        },
+        {
+            "image": "https://www.marymart.com/wp-content/uploads/2019/03/mary_mart_tacoma_store_front_sign-copy.jpg",
+            "name": "Mary Mart",
+            "deal": "Sunday Funday - 20% off all paraphernalia and use any daily deal above!"
+        },
+        {
+            "image": "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fdispensary%2Flogos%2FvgAyEa2ORfOX1opbcbAW_IMG_8381.JPG?ixlib=js-2.3.2&dpr=1&w=1100&h=750&fit=fillmax&s=b0c7ab6c3408d781981ac362d8ade25f",
+            "name": "Commencement Bay Cannabis - Red",
+            "deal": "Monday Funday - 20% Off Storewide"
+        },
+        {
+            "image": "https://leafly-production.imgix.net/https%3A%2F%2Fleafly-public.s3-us-west-2.amazonaws.com%2Fdispensary%2Flogos%2FvgAyEa2ORfOX1opbcbAW_IMG_8381.JPG?ixlib=js-2.3.2&dpr=1&w=1100&h=750&fit=fillmax&s=b0c7ab6c3408d781981ac362d8ade25f",
+            "name": "Commencement Bay Cannabis - Red",
+            "deal": "Thank You Thursday - 15% Off Online Orders"
+        },
+        {
+            "image": "https://commencementbaycannabis.com/wp-content/uploads/2020/10/commencement-bay-cannabis-logo-trimmed-green.png",
+            "name": "Commencement Bay Cannabis - Green",
+            "deal": "Turnt up Tuesday - 20% Off Storewide"
+        },
+        {
+            "image": "https://pbs.twimg.com/profile_images/1027225946623959040/Tzo4pgVI_400x400.jpg",
+            "name": "Bloom Cannabis - Tacoma",
+            "deal": "25% OFF the Whole Store"
+        },
+        {
+            "image": "https://pbs.twimg.com/profile_images/1027225946623959040/Tzo4pgVI_400x400.jpg",
+            "name": "Bloom Cannabis - Tacoma",
+            "deal": "30 OFF All Half & Full Ounces 25% OFF All Online Orders"
+        },
+        {
+            "image": "https://www.colorhexa.com/4895ef.png",
+            "name": "Clear Choice - Tacoma",
+            "deal": "Save 30% storewide"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Monday - 20% off the entire store"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Thursday - 25% off online orders"
+        },
+        {
+            "image": "https://i.ibb.co/Fbqg9qT/Untitled.jpg",
+            "name": "Emerald Leaves",
+            "deal": "Saturday - 20% off entire store and 30% off Oz"
+        }
+    ],
+    "other": [
+        
+    ]
+  }
+  

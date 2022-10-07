@@ -1,0 +1,90 @@
+{% extends "../bakedbuddyApp/base.html" %}
+
+{% block content %}
+
+<!-- Requests Section -->
+<div class="container is-fluid">
+    <!-- Title -->
+    <h1 class="is-size-4"><strong>{{ product_type.capitalize }}</strong></h1>
+    
+    <div class="notification is-success is-light has-text-centered mt-2">
+      {% comment %} Check back soon to <strong>favorite</strong> your most visited dispensaries. {% endcomment %}
+      <strong>Updating</strong>
+    </div>
+
+    <!-- Deal Cards -->
+    <div class="columns is-multiline">
+        {% for deal in deals_list %}
+            <div class="column is-one-fifth">
+                <div class="card mx-auto" style="height: 100%">
+                <div class="card-image mx-auto">
+                    <figure class="image is-2by1" href="">
+                    {% comment %} <a href="">
+                        <img src="{{ dispensary.profile_picture }}">
+                    </a> {% endcomment %}
+                    <img src="{{ deal.image }}" id="dispensary-image">
+                    </figure>
+                </div>
+                
+                <div class="px-4 py-2">
+                    <h1>
+                    <!-- Add link to the dispensary home page here -->
+                    <a href="" style="color: black;" class="is-size-4 has-text-weight-medium has-text-centered">
+                        <div>
+                        <p class="heading">{{ deal.name }}</p>
+                        </div>
+                    </a>
+                    </h1>
+                    <p class="is-size-7 has-text-centered">{{ deal.deal }}</p>
+                </div> 
+                
+                </div>
+                <br>
+            </div>
+        {% endfor %}
+    </div>
+    
+    <div class="columns is-multiline">
+
+            {% for dispensary in tacoma_daily_deals_list %}
+            <div class="column is-one-fifth">
+              <div class="card mx-auto" style="height: 100%">
+                <div class="card-image mx-auto">
+                  <figure class="image is-2by1" href="">
+                    {% comment %} <a href="">
+                      <img src="{{ dispensary.profile_picture }}">
+                    </a> {% endcomment %}
+                    <img src="{{ dispensary.profile_picture }}" id="dispensary-image">
+                  </figure>
+                </div>
+              
+                <div class="px-4 py-2">
+                  <h1>
+                    <!-- Add link to the dispensary home page here -->
+                    <a href="" style="color: black;" class="is-size-4 has-text-weight-medium has-text-centered">
+                      <div>
+                        <p class="heading">{{ dispensary.name }}</p>
+                      </div>
+                    </a>
+                  </h1>
+                  <p class="is-size-7 has-text-centered">{{ dispensary.daily_deals.1 }}</p>
+                </div> 
+                
+              </div>
+              <br>
+            </div>
+            {% endfor %} 
+            
+
+      </div>
+ 
+
+
+
+  </div>
+
+{% endblock %}
+
+
+
+

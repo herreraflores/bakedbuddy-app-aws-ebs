@@ -1,0 +1,46 @@
+{% extends "../bakedbuddyApp/base.html" %}
+
+{% block content %}
+
+<!-- Register Section -->
+<div class="container is-fluid">
+  <!-- Title -->
+  <h1 class="is-size-4"><strong>Register</strong></h1>
+
+  <form method="POST" class="form-group is-primary mt-2">
+    {% csrf_token %}
+
+
+    {% for field in form %}
+    <label class="label" for="{{ field.auto_id }}"
+      >{{ field.label }}</label
+    >
+    {% for error in field.errors %}
+    <p class="has-text-danger">{{ error }}</p>
+    {% endfor %} {{ field }} {% endfor %}
+
+    
+    <label class="checkbox mt-4 mb-3">
+      <input type="checkbox" required>
+      <label class="has-text-weight-semibold">
+        I am at least 21 years old
+      </label>
+    </label>
+
+    <button
+      type="submit"
+      class="button is-centered my-2 is-fullwidth has-text-white"
+      style="background-color: #4895ef"
+    >
+      Register
+    </button>
+
+  </form>
+  <button class="button is-fullwidth">Login</button>
+
+</div>
+
+{% endblock %}
+
+
+

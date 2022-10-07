@@ -1,0 +1,116 @@
+{% extends "../bakedbuddyApp/base.html" %}
+
+{% block content %}
+
+<!-- Daily Deals Section -->
+<div class="container is-fluid">
+    <!-- Title -->
+    <!-- Button colors at https://coolors.co/palette/fbf8cc-fde4cf-ffcfd2-f1c0e8-cfbaf0-a3c4f3-90dbf4-8eecf5-98f5e1-b9fbc0 -->
+    <h1 class="is-size-4"><strong>Deals</strong></h1>
+    <div class="buttons are-small mt-4">
+      <button class="button is-rounded" style="background-color: #caffbf; border: #caffbf;">
+        <a href="/daily-deals/flower" style="color: black;">
+          <span class="icon">
+            <i class="fa-solid fa-cannabis"></i>
+          </span>
+          <span>Flower</span>
+        </a>
+      </button>
+
+      <button class="button is-rounded"  style="background-color: #fbf8cc; border: #fbf8cc;">
+        <a href="/daily-deals/edibles" style="color: black;">
+          <span class="icon">
+            <i class="fa-solid fa-cookie"></i>
+          </span>
+          <span>Edibles</span>
+        </a>
+      </button>
+
+      <button class="button is-rounded"  style="background-color: #90dbf4; border: #90dbf4;">
+        <a href="/daily-deals/prerolls" style="color: black;">
+          <span class="icon">
+            <i class="fa-solid fa-joint"></i>
+          </span>
+          <span>Prerolls</span>
+        </a>
+      </button>
+
+      <button class="button is-rounded"  style="background-color: #ffcfd2; border: #ffcfd2;">
+        <a href="/daily-deals/vaporizers" style="color: black;">
+          <span class="icon">
+            <i class="fa-solid fa-pen"></i>
+          </span>
+          <span>Vaporizers</span>
+        </a>
+      </button>
+
+      <button class="button is-rounded"  style="background-color: #a3c4f3; border: #a3c4f3;">
+        <a href="/daily-deals/beverages" style="color: black;">
+          <span class="icon">
+            <i class="fa-solid fa-bottle-water"></i>
+          </span>
+          <span>Beverages</span>
+        </a>
+      </button>
+
+      <button class="button is-rounded"  style="background-color: #f1c0e8; border: #f1c0e8;">
+        <a href="/daily-deals/concentrates" style="color: black;">
+          <span class="icon">
+            <i class="fa-solid fa-jar"></i>
+          </span>
+          <span>Concentrates</span>
+        </a>
+      </button>
+    </div>
+
+    <!-- Title -->
+    <h1 class="is-size-4"><strong>Daily Deals</strong></h1>
+
+    <div class="columns is-multiline mt-2">
+
+      {% for dispensary in tacoma_daily_deals_list %}
+      <div class="column is-one-fifth py-5 px-5">
+          <div class="card mx-auto" style="height: 100%">
+            <div class="card-image mx-auto">
+              <figure class="image is-2by1" href="/dispensaries/{{ dispensary.id }}">
+                <a href="/dispensaries/{{ dispensary.id }}">
+                  <img src="{{ dispensary.profile_picture }}">
+                </a>
+              </figure>
+            </div>
+          
+            <div class="px-4 py-2">
+              <p class="is-size-6 has-text-weight-medium">{{ dispensary.name }}</p>
+              
+              <p class="is-size-7">{{ dispensary.formatted_address }}</p>
+              {% comment %} Last Updated {% endcomment %}
+              <p class="is-size-7 mt-2">{{ dispensary.Monday_Deal_1 }}</p>
+              {% if dispensary.verified == 'Yes' %}
+              <span class="icon-text mt-1 has-text-weight-medium">
+                <span><p class="heading" style="color: black;">Verified</p></span>
+
+                <span class="icon">
+                  <figure class="image is-16x16">
+                    <img src="https://icon2.cleanpng.com/20180611/zt/kisspng-social-media-instagram-verified-badge-symbol-compu-5b1eedb564fc38.3684025715287535894136.jpg">
+                  </figure>
+                </span>
+                
+              </span>
+              {% endif %}
+            </div> 
+            
+          </div>
+        
+      </div>
+      {% endfor %}
+
+      
+    </div>   
+
+  </div>
+
+{% endblock %}
+
+
+
+

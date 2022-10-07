@@ -1,0 +1,32 @@
+{% extends "./bakedbuddyApp/base.html" %}
+
+{% block content %}
+
+<!-- Login Section -->
+<div class="container is-fluid">
+  <!-- Title -->
+  <h1 class="is-size-4"><strong>Login</strong></h1>
+
+  <form method="POST" class="form-group">
+    {% csrf_token %} {% for field in form %}
+    <label class="label" for="{{ field.auto_id }}"
+      >{{ field.label }}</label
+    >
+    {% for error in field.errors %}
+    <p class="has-text-danger">{{ error }}</p>
+    {% endfor %} {{ field }} {% endfor %}
+    <button
+      type="submit"
+      class="button is-centered mt-4 mb-2 is-fullwidth has-text-white"
+      style="background-color: #4895ef"
+    >
+      Login
+    </button>
+  </form>
+
+  <p>Don't have an account? Create one <a href="/register">here.</a></p>
+  <a href="/password-reset" class="has-text-link">Forgot password?</a>
+</div>
+
+
+{% endblock %}

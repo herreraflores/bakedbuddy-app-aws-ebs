@@ -1,0 +1,31 @@
+{% extends "../bakedbuddyApp/base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="container is-fluid">
+  <div class="section">
+      <div class="container">
+          <div class="has-text-centered">
+              <h2 class="title is-spaced">
+                  <span>See the</span>
+                  <span style="color: #4895ef">daily deals</span>
+                  <span>available in Tacoma.</span>
+              </h2>
+              {% comment %} <p class="subtitle">Click on Product Search to find a brand or strain in Tacoma.</p> {% endcomment %}
+              {% comment %} <p class="subtitle">More updates coming soon.</p> {% endcomment %}
+              <p class="subtitle">Updated every week.</p>
+              <p class="subtitle">...    {{ aws_profile }}      ...</p>
+              <div class="buttons is-centered">
+                <a class="button has-text-white" style="background-color: #4895ef" href="/daily-deals">Daily Deals</a>
+                {% comment %} <a class="button is-dark is-outlined" href="/product-search">Product Search</a> {% endcomment %}
+                {% comment %} <a class="button is-dark is-outlined" href="/register">Create an account</a> {% endcomment %}
+            </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+{% endblock %}
+
+

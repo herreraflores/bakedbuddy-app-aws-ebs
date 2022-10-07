@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bakedbuddyprod",
+  "private_key_id": "a458d07c5ec844e78c50e7976992e73be2f24615",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC+de4cxj6254Bd\nfXO6zMWS/nn8mH2kEmo4oVSUwpbm2rPXQuO+cTylJ4q6GyCaQC507l1TElqdCK1V\n5Nd95wLn9fzrJpdejkEC8Zz6gne2AeBEZb0Gmza+YB3U34ZFNN/j8GHil7uxLPcn\n6EfGdGZjX6bvdT0NPTi9eNpyTqIpzey6IsHp8df+CqAaOg1OxnsLZuVdCD57xNnu\nAHS2gxCxaDytjndzTowUpqVQsaIx0d40aK/UT1spsLf7yCkajdPiDZTwhP0oT04h\nIyqZPm6YaJd2qMO8SjvblTBskWfGuVaoJ1Dz5DsDVE7VYCj4si3E5vyxmSis//On\nL+EQdnF9AgMBAAECggEANJNDTqge6ciP877MspUSORiMPgEuNZtrvQQz3/izRTi8\nCkEJsyl5DzISJnuUjWAIMvkVw/e+EbkyeBJ6teOONs/9qD/36v8jzRc7OR/IwfJU\noSzgeDFidDz+HyQw4WvOHhLeQnmWMztxYo/JOGwrU2U1JMbdOola31q8Gm/Abf9T\nLW7ny3MKtTPKZ9rfZj4yzOMBYX49sFATwIfuc7Ey9YWxp9iGNnNVPYf2wKbYMI3H\nB0EaS2royOaj7piu3hUSiYq2MZh7PZ3r9KowYGDaWeGW5U7D3usb+GyNjGs4DWgv\nFcLBfnOswJ0Hf2qhxje1/Z4PqTd+kHNEg4KYY64qtQKBgQDpv6oqWtlW7zwH9ank\nYP+/gCFd4JCV/thJCXUr6cfa+Dg1es8CXgg9VgC3+qu+fCFBujznejJO7xP+fN6U\nRLETr/u1rYCDRb0JJtqeE4vtI5yxUmwd/nk3hrBPzR5GrG/vGoi5YKASS0C7Ui6P\ntHEnOWWDQrMq1vjoy/ucA9PaBwKBgQDQl1vHK8Y+dhX2NRnxBJCI7QNbW3kvETn/\nYwcBCGU/2FaScoz+xQS1m6Lv8fgfhN7Y8VFjKtGqCkDYuRPCDNar3dPIXJQF4Fjv\n2l8eYSSQY5Nw4FUjxZ0gwLcAVb360PRduCFiHG0qM2cbKzP1i5vplodFriK3GPoN\ndpAfi9BHWwKBgEhINqzGTzMs45lqhFDVFgD39Fl9WfioR+W+APfFYUH7RBZ1lZIb\n1dxxveMmpvlOlVIn7zF9fhUepUYrAwFChKeb4fB6aKUvaZds5mm/jaOVQZ0r6bcU\nvBNJmTf0LAqaxDpiMClzEczWbHwAm9lgaSVCAHwoohL7SxliCrpiDJ79AoGAS7Mi\nc53HTFO+lKOgzn9BlO+vEDCaQiKWUcC2ggFx/UGd6Xf5A1ys4NuivkGqMoYd+c1a\nJAseG/+smPpR2VKfdbADc+tlLNzGagVuD7BhfKUmlQhU3a6R35kQ0OZNFAFRLdHt\nC5YVaANPn+SF7s7DvnoKjZcsshY2aTxmAYzUAZECgYATxCw1Vme8HOadZ8fRdARN\nTXDWkQbrEU1K40JaXBTO3w1k7QWF7O6QtCjatJst2AkMZkaBjumqTzIB3BaiUczp\nLzcgj/ubGxnMexY3vXAu6vyUlQYqCukMnlzL5qtcmHSH9M1IYLpux8SxcJWFF/Nd\nIZvLcQ2AmkHm4/9/zmlGuw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bakedbuddyprod-sa@bakedbuddyprod.iam.gserviceaccount.com",
+  "client_id": "107506968997518167276",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bakedbuddyprod-sa%40bakedbuddyprod.iam.gserviceaccount.com"
+}

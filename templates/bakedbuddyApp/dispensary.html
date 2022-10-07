@@ -1,0 +1,148 @@
+{% extends "../bakedbuddyApp/base.html" %}
+
+{% block content %}
+
+<div class="container is-fluid mt-2">
+    
+    <div class="columns is-desktop is-vcentered">
+      <!-- Image -->
+      <div class="column is-6-desktop">
+        <figure class="image is-full">
+          <img src={{ dispensary.profile_picture }}>
+        </figure>
+      </div>
+      
+      <!-- Details -->
+      <div class="column is-6-desktop">
+        <!-- Name -->
+        <h1 class="is-size-4"><strong>{{ dispensary.name }}</strong></h1>
+        <p>{{  dispensary.formatted_address  }}</p>
+    
+        <!-- Daily Text -->
+        <p class="mt-2"><strong>Daily Deal</strong></p>
+
+        <p>
+          {% if current_date == 6 %}
+          {{ dispensary.Sunday_Deal_1 }}
+          {{ dispensary.Sunday_Deal_2 }}
+          {{ dispensary.Sunday_Deal_3 }}
+
+          {% elif current_date == 0 %}
+          {{ dispensary.Monday_Deal_1 }}
+          {{ dispensary.Monday_Deal_2 }}
+          {{ dispensary.Monday_Deal_3 }}
+
+          {% elif current_date == 1 %}
+          {{ dispensary.Tuesday_Deal_1 }}
+          {{ dispensary.Tuesday_Deal_2 }}
+          {{ dispensary.Tuesday_Deal_3 }}
+
+          {% elif current_date == 2 %}
+          {{ dispensary.Wednesday_Deal_1 }}
+          {{ dispensary.Wednesday_Deal_2 }}
+          {{ dispensary.Wednesday_Deal_3 }}
+
+          {% elif current_date == 3 %}
+          {{ dispensary.Thursday_Deal_1 }}
+          {{ dispensary.Thursday_Deal_2 }}
+          {{ dispensary.Thursday_Deal_3 }}
+
+          {% elif current_date == 4 %}
+          {{ dispensary.Friday_Deal_1 }}
+          {{ dispensary.Friday_Deal_2 }}
+          {{ dispensary.Friday_Deal_3 }}
+
+          {% else %}
+          {{ dispensary.Saturday_Deal_1 }}
+          {{ dispensary.Saturday_Deal_2 }}
+          {{ dispensary.Saturday_Deal_3 }}
+
+          {% endif%}
+        </p>
+
+        <!-- Break -->
+        <hr>
+
+        <div class="buttons are-small">
+          <button class="button" onclick="const myModal = document.querySelector('.modal'); myModal.classList.add('is-active');">
+            Deals
+          </button>
+          <button class="button">
+            <a href="{{ dispensary.website_url }}" style="color: black;">
+              Website
+            </a>
+          </button>
+          <button class="button">
+            <a href="{{ dispensary.shopping_url }}" style="color: black;">
+              Shop
+            </a>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="modal is-mobile">
+        <div class="modal-background" onclick="const myModal = document.querySelector('.modal'); myModal.classList.remove('is-active');"></div>
+        <div class="modal-content">
+          <!-- Any other Bulma elements you want -->
+          <div class="has-background-white py-5 px-5">
+            <h1 class="title">Daily Deals</h1>
+
+            <h1 class=""><strong>Sunday</strong></h1>
+            <h1 class="">{{ dispensary.Sunday_Deal_1 }}</h1>
+            <h1 class="">{{ dispensary.Sunday_Deal_2 }}</h1>
+            <h1 class="">{{ dispensary.Sunday_Deal_3 }}</h1>            
+            
+            <h1 class="mt-2"><strong>Monday</strong></h1>
+            <h1 class="">{{ dispensary.Monday_Deal_1 }}</h1>
+            <h1 class="">{{ dispensary.Monday_Deal_2 }}</h1>
+            <h1 class="">{{ dispensary.Monday_Deal_3 }}</h1>
+
+            <h1 class="mt-2"><strong>Tuesday</strong></h1>
+            <h1 class="">{{ dispensary.Tuesday_Deal_1 }}</h1>
+            <h1 class="">{{ dispensary.Tuesday_Deal_2 }}</h1>
+            <h1 class="">{{ dispensary.Tuesday_Deal_3 }}</h1>
+            
+            <h1 class="mt-2"><strong>Wednesday</strong></h1>
+            <h1 class="">{{ dispensary.Wednesday_Deal_1 }}</h1>
+            <h1 class="">{{ dispensary.Wednesday_Deal_2 }}</h1>
+            <h1 class="">{{ dispensary.Wednesday_Deal_3 }}</h1>
+
+            <h1 class="mt-2"><strong>Thursday</strong></h1>
+            <h1 class="">{{ dispensary.Thursday_Deal_1 }}</h1>
+            <h1 class="">{{ dispensary.Thursday_Deal_2 }}</h1>
+            <h1 class="">{{ dispensary.Thursday_Deal_3 }}</h1>
+
+            <h1 class="mt-2"><strong>Friday</strong></h1>
+            <h1 class="">{{ dispensary.Friday_Deal_1 }}</h1>
+            <h1 class="">{{ dispensary.Friday_Deal_2 }}</h1>
+            <h1 class="">{{ dispensary.Friday_Deal_3 }}</h1>
+
+            <h1 class="mt-2"><strong>Saturday</strong></h1>
+            <h1 class="">{{ dispensary.Saturday_Deal_1 }}</h1>
+            <h1 class="">{{ dispensary.Saturday_Deal_2 }}</h1>
+            <h1 class="">{{ dispensary.Saturday_Deal_3 }}</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Gallery -->
+    <div class="container">
+      <div class="columns">
+        <div class="column"><img src="{{ dispensary.Image_URL_1 }}" ></div>
+        <div class="column"><img src="{{ dispensary.Image_URL_2 }}" ></div>
+        <div class="column"><img src="{{ dispensary.Image_URL_3 }}" ></div>
+        <div class="column"><img src="{{ dispensary.Image_URL_4 }}" ></div>
+      </div>
+    </div>
+
+  </div>
+
+
+{% endblock %}
+
+
+
+
